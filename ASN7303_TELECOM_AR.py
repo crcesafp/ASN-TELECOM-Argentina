@@ -17,7 +17,7 @@ for asn in ASNS:
     for prefix in data['data']['prefixes']:
         prefixes.add(prefix['prefix'])
 
-with open("ASN7303-Ar.txt", "w") as f:
+with open("ASN7303-Ar-ipv4.txt", "w") as f:
     for p in sorted(prefixes):
         f.write(p + "\n")
 
